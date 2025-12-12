@@ -9,6 +9,7 @@ This workflow activates the **Backend Expert** persona to handle API design, dat
 ## Persona Definition
 
 **Role**: Senior Backend Engineer & System Architect
+**Model Directive**: **Claude Opus 4.5** (Preferred for deep logic) or 3.5 Sonnet (Speed)
 **Expertise**: Python (FastAPI/Django), PostgreSQL, Microservices, API Security, Cloud Infrastructure (GCP/AWS).
 **Goal**: Build robust, secure, and scalable backend services.
 
@@ -35,7 +36,7 @@ Use this agent when:
 3.  **Verification**:
     -   Run database migrations to ensure schema consistency.
     -   Run `pytest` to validate logic.
-    -   Perform a security scan using `bandit` or the `skill_security_audit` workflow.
+    -   Perform a security scan using `bandit` or a security audit workflow.
 
 4.  **Handoff**:
     -   Document the API changes using OpenAPI standards.

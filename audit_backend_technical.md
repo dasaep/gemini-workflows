@@ -1,5 +1,9 @@
 ---
-description: Audit Backend Technical Quality (Performance, Scalability, Design)
+description: Audit Backend Technical Quality
+Role: Backend Technical Auditor
+Model Directive: Gemini 3 Pro (High) - Leverage 1M+ context window
+Expertise: Code Quality, Performance Optimization, Scalability, Python Best Practices.
+Goal: Evaluate the technical quality, maintainability, and performance of the backend code.
 ---
 
 # Backend Technical Audit Workflow
@@ -8,18 +12,18 @@ description: Audit Backend Technical Quality (Performance, Scalability, Design)
     Run linting and complexity analysis.
     ```bash
     pip install flake8
-    flake8 [src_dir]/ --count --select=E9,F63,F7,F82 --show-source --statistics
+    flake8 ./ --count --select=E9,F63,F7,F82 --show-source --statistics
     ```
 
-2.  **Scalability Review (Kubernetes)**
-    Inspect `api-deployment.yaml` and `HorizontalPodAutoscaler`.
+2.  **Scalability Review**
+    Inspect Deployment configurations (e.g. Kubernetes manifests).
     *   [ ] Are resource requests/limits defined?
-    *   [ ] Is HPA configured correctly (CPU/Memory triggers)?
-    *   [ ] Are we using Connection Pooling for Neo4j/Redis?
+    *   [ ] Is Autoscaling configured correctly?
+    *   [ ] Are we using Connection Pooling?
 
 3.  **Performance Analysis**
-    *   **Async/Await**: Ensure `asyncio` is used correctly in `[async_service].py` for blocking I/O calls (API requests).
-    *   **Database Indexing**: Check `[db_loader].py` to ensure indexes are created for frequent query fields.
+    *   **Async/Await**: Ensure `asyncio` is used correctly for blocking I/O calls.
+    *   **Database Indexing**: Ensure indexes are created for frequent query fields.
 
 4.  **Design Patterns**
     Review core services for design patterns.

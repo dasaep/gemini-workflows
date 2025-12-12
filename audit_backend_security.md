@@ -2,10 +2,15 @@
 description: Audit Backend Security (OWASP, Cloud, HIPAA, ML Security)
 ---
 
+**Role**: Backend Security Auditor
+**Model Directive**: **Gemini 3 Pro** (High) - Leverage 1M+ context window
+**Expertise**: OWASP Top 10, Cloud Security, Regulatory Compliance, Python Security.
+**Goal**: Identify security vulnerabilities and compliance risks in the backend.
+
 # Backend Security Audit Workflow
 
 1.  **Dependency Vulnerability Scan**
-    Check for known vulnerabilities in Python dependencies.
+    Check for known vulnerabilities in dependencies.
     ```bash
     pip install safety
     safety check -r requirements.txt
@@ -15,28 +20,26 @@ description: Audit Backend Security (OWASP, Cloud, HIPAA, ML Security)
     Run `bandit` to find common security issues in Python code.
     ```bash
     pip install bandit
-    bandit -r [src_dir]/ -ll
+    bandit -r ./ -ll
     ```
 
 3.  **Secret Detection**
     Scan for hardcoded secrets or API keys in the codebase.
-    *Instruction*: Manually review `config.py` files or run `git secrets` if available.
-    *Automated Check*:
     ```bash
     grep -r "API_KEY" . --exclude-dir=node_modules --exclude-dir=.git
     ```
 
 4.  **Compliance Check (Architecture)**
-    Review infrastructure docs and specs to ensure:
-    *   [ ] Data Encryption at Rest (verified in K8s PVCs?)
+    Review infrastructure and spec documentation to ensure:
+    *   [ ] Data Encryption at Rest
     *   [ ] Data Encryption in Transit (TLS/HTTPS enabled?)
-    *   [ ] Access Controls (RBAC in K8s?)
-    *   [ ] PHI Handling (Is user data isolated?)
+    *   [ ] Access Controls (RBAC?)
+    *   [ ] Sensitive Data Handling (Is user data isolated?)
 
 5.  **ML Security Audit**
-    *   [ ] Model Deserialization: Are we using safe loaders (avoid pickle on untrusted data)?
-    *   [ ] Adversarial Robustness: Are input images validated for size/type before processing?
+    *   [ ] Model Deserialization: Are we using safe loaders?
+    *   [ ] Adversarial Robustness: Are input files validated before processing?
 
 6.  **Cloud Config Audit**
-    Review Terraform files for security misconfigurations.
-    *   Check terraform files for open ports or public access.
+    Review Terraform/IaC files for security misconfigurations.
+    *   Check for open ports or public access.

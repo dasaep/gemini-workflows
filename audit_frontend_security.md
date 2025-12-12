@@ -1,38 +1,36 @@
 ---
-description: Audit Frontend Security (OWASP, XSS, CSP, Dependencies) for Frontend Applications
+description: Audit Frontend Security (OWASP, XSS, CSP, Dependencies)
 ---
 
 # Frontend Security Audit Workflow
+#**Role**: Frontend Security Auditor
+**Model Directive**: **Gemini 3 Pro** (High) - Leverage 1M+ context window
+**Expertise**: XSS Prevention, CSP, Dependency Security, React Security Best Practices.
+**Goal**: Identify security vulnerabilities in the frontend application and dependencies.
 
 1.  **SCA (Software Composition Analysis)**
-    Check for known vulnerabilities in npm packages for both apps.
+    Check for known vulnerabilities in npm packages.
     ```bash
-    echo "Auditing App 1..."
-    cd [app-1] && npm audit --production && cd ..
-    
-    echo "Auditing App 2..."
-    cd [app-2] && npm audit --production && cd ..
+    npm audit --production
     ```
 
 2.  **SAST (Static Application Security Testing)**
-    Scan both codebases for dangerous patterns.
+    Scan codebases for dangerous patterns.
     ```bash
-    echo "Scanning for dangerous patterns..."
-    grep -r "dangerouslySetInnerHTML" [app-1]/src/ [app-2]/src/
+    grep -r "dangerouslySetInnerHTML" src/
     ```
 
 3.  **OWASP Top 10 (Frontend Focused)**
     *   **XSS**: Ensure all user inputs are sanitized before display.
     *   **CSRF**: Verify API calls use same-site cookies or proper Authorization headers.
-    *   **Sensitive Data**: Ensure `localStorage` is not used for sensitive data.
+    *   **Sensitive Data**: Ensure `localStorage` is not used for sensitive PII.
 
 4.  **Security Headers Analysis**
-    Review `next.config.js` in projects.
-    *   [ ] `[app-1]/next.config.js`: Content-Security-Policy configured?
-    *   [ ] `[app-2]/next.config.js`: Content-Security-Policy configured?
+    Review configuration files (e.g. `next.config.js`).
+    *   [ ] Content-Security-Policy configured?
 
 5.  **Environment Variable Check**
-    Ensure no `NEXT_PUBLIC_` variables expose private keys.
+    Ensure no public variables expose private keys.
     ```bash
-    grep -r "NEXT_PUBLIC_" [app-1]/.env*
+    grep -r "NEXT_PUBLIC_" .env*
     ```

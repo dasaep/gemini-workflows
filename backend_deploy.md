@@ -1,58 +1,63 @@
 ---
-description: Deploy Project Backend with Integrated Audits (Security -> Functional -> Technical -> Deploy)
+description: Generic Deployment Orchestrator Workflow
 ---
 
-# Backend Deployment Pipeline
+# Deployment Pipeline Workflow
 
-## Phase 1: security_audit
+**Role**: Deployment Orchestrator
+**Model Directive**: **GPT-5.2 (Thinking)** (Preferred for orchestration)
+**Expertise**: CI/CD (GitHub Actions), Kubernetes (Helm/Kustomize), Docker, Production Release Cycles.
+**Goal**: Securely deploy services to production with zero downtime.
+
+## Phase 1: Security Audit
 1.  **Vulnerability & Secret Scan**
     ```bash
+    # Example commands - adjust for your project
     pip install safety bandit
     safety check -r requirements.txt
-    bandit -r [src_dir]/ -ll
+    bandit -r src/ -ll
     grep -r "API_KEY" . --exclude-dir=node_modules --exclude-dir=.git
     ```
 
 2.  **Compliance Check**
-    *   [ ] Verify compliances (Encryption, Access Control).
-    *   [ ] Verify Secure Model Loading.
+    *   [ ] Verify Compliance Standards (HIPAA/GDPR/SOC2).
+    *   [ ] Verify Secure Secrets Management.
 
-## Phase 2: functional_audit
+## Phase 2: Functional Audit
 3.  **Goal & API Contract Verification**
-    *   [ ] Verify Requirements/Spec alignment.
-    *   [ ] Check API contract validity (e.g. `router.py` or `app.py`).
+    *   [ ] Verify API Specification alignment.
+    *   [ ] Check service contract validity.
 
 4.  **Extensibility Check**
     *   [ ] Verify modularity of services.
 
-## Phase 3: technical_audit
+## Phase 3: Technical Audit
 5.  **Code Quality & Scalability**
     ```bash
-    flake8 [src_dir]/ --count --select=E9,F63,F7,F82 --show-source --statistics
+    # Example linting
+    flake8 src/ --count --select=E9,F63,F7,F82 --show-source --statistics
     ```
-    *   [ ] Review HPA and Resources configuration.
+    *   [ ] Review HPA and resource limits.
 
-## Phase 4: deploy
-6.  **Build & Push Docker Image (Optional)**
-    *Only if code changes require new image (vs just ConfigMap patch)*
+## Phase 4: Deploy
+6.  **Build & Push Docker Image**
     ```bash
-    # docker build -t [registry]/[project]/api:latest .
-    # docker push [registry]/[project]/api:latest
+    # docker build -t gcr.io/my-project/my-service:latest .
+    # docker push gcr.io/my-project/my-service:latest
     ```
 
-7.  **Update ConfigMaps**
+7.  **Update ConfigMaps/Secrets**
     ```bash
-    # Update this command to match your specific configmap needs
-    # kubectl create configmap [configmap-name] --from-file=[key]=[path] -n [namespace] --dry-run=client -o yaml | kubectl apply -f -
+    # kubectl create configmap my-config --from-file=config.yaml -n my-namespace --dry-run=client -o yaml | kubectl apply -f -
     ```
 
 8.  **Restart Services**
     ```bash
-    # Update deployment names as needed
-    kubectl rollout restart deployment [deployment-name] -n [namespace]
+    // turbo
+    kubectl rollout restart deployment my-service -n my-namespace
     ```
 
 9.  **Verify Deployment**
     ```bash
-    kubectl get pods -n [namespace]
+    kubectl get pods -n my-namespace
     ```

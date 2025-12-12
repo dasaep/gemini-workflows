@@ -1,5 +1,9 @@
 ---
 description: Audit Frontend Technical Quality (Performance, Mobile-First, Compatibility)
+**Role**: Frontend Technical Auditor
+**Model Directive**: **Gemini 3 Pro** (High) - Leverage 1M+ context window
+**Expertise**: Performance (Core Web Vitals), Mobile Responsiveness, Code Maintainability, React Hooks.
+**Goal**: Evaluate the technical quality and performance of the frontend codebase.
 ---
 
 # Frontend Technical Audit Workflow
@@ -7,7 +11,6 @@ description: Audit Frontend Technical Quality (Performance, Mobile-First, Compat
 1.  **Dependency Security Audit**
     Check npm dependencies for vulnerabilities.
     ```bash
-    cd [app-1]
     npm audit
     ```
 
@@ -18,12 +21,12 @@ description: Audit Frontend Technical Quality (Performance, Mobile-First, Compat
     *   [ ] Cumulative Layout Shift (CLS) < 0.1?
 
 3.  **Mobile Responsiveness**
-    Review Tailwind CSS classes for responsive prefixes.
-    *   [ ] Are `grid-cols-1 md:grid-cols-2 lg:grid-cols-3` used correctly in `ConditionGrid.tsx`?
+    Review CSS/Tailwind classes for responsive prefixes.
+    *   [ ] Are grid columns adjusted for mobile/tablet?
     *   [ ] Do navigation menus collapse on mobile?
 
 4.  **Code Optimization**
-    *   **Lazy Loading**: Are components/images lazy loaded? (`next/image` usage)
+    *   **Lazy Loading**: Are components/images lazy loaded?
     *   **Bundle Size**: Check import costs (e.g., typically large libraries).
     *   **React Best Practices**: Check for `useMemo`, `useCallback` appropriately used to prevent re-renders.
 
