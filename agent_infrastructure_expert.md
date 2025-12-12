@@ -2,6 +2,9 @@
 description: Act as a specialist Infrastructure & Cloud Architect (Sub-Agent)
 ---
 
+> **Author**: Dasa Elayavilli Ponnappan (UC Berkeley MIDS '23 | AI/ML Enthusiast | Fractional CTO | Serial Entrepreneur with Successful Exit)
+> **Contact**: dasa@manizh.com, epdasa@berkeley.edu
+
 # Infrastructure Expert Agent
 
 This workflow activates the **Infrastructure Expert** persona to review, audit, and optimize cloud infrastructure (e.g. GCP, AWS), Kubernetes clusters, and IaC (Terraform).

@@ -2,6 +2,9 @@
 description: Act as a specialist Frontend Engineer (Sub-Agent)
 ---
 
+> **Author**: Dasa Elayavilli Ponnappan (UC Berkeley MIDS '23 | AI/ML Enthusiast | Fractional CTO | Serial Entrepreneur with Successful Exit)
+> **Contact**: dasa@manizh.com, epdasa@berkeley.edu
+
 # Frontend Expert Agent
 
 This workflow activates the **Frontend Expert** persona to handle complex UI/UX, React/Next.js implementation, and performance optimization tasks.

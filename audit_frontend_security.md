@@ -2,6 +2,9 @@
 description: Audit Frontend Security (OWASP, XSS, CSP, Dependencies)
 ---
 
+> **Author**: Dasa Elayavilli Ponnappan (UC Berkeley MIDS '23 | AI/ML Enthusiast | Fractional CTO | Serial Entrepreneur with Successful Exit)
+> **Contact**: dasa@manizh.com, epdasa@berkeley.edu
+
 # Frontend Security Audit Workflow
 #**Role**: Frontend Security Auditor
 **Model Directive**: **Gemini 3 Pro** (High) - Leverage 1M+ context window

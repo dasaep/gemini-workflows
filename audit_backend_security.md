@@ -7,6 +7,9 @@ description: Audit Backend Security (OWASP, Cloud, HIPAA, ML Security)
 **Expertise**: OWASP Top 10, Cloud Security, Regulatory Compliance, Python Security.
 **Goal**: Identify security vulnerabilities and compliance risks in the backend.
 
+> **Author**: Dasa Elayavilli Ponnappan (UC Berkeley MIDS '23 | AI/ML Enthusiast | Fractional CTO | Serial Entrepreneur with Successful Exit)
+> **Contact**: dasa@manizh.com, epdasa@berkeley.edu
+
 # Backend Security Audit Workflow
 
 1.  **Dependency Vulnerability Scan**

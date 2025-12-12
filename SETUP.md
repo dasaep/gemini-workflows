@@ -30,3 +30,10 @@ Once installed, simply use the slash commands in your chat interface to invoke t
 ## 4. Customization
 
 You can edit the `.md` files to tailor the `Expertise` and `Goal` sections to your specific project needs (e.g., adding specific tech stack details like Django, AWS, Vue.js, etc.).
+
+## ✍️ Author & Credits
+
+**Dasa Elayavilli Ponnappan**
+*UC Berkeley MIDS '23 | AI-ML Enthusiast | Fractional CTO | Serial Entrepreneur with Successful Exit*
+
+📧 **Contact**: [dasa@manizh.com](mailto:dasa@manizh.com), [epdasa@berkeley.edu](mailto:epdasa@berkeley.edu)

@@ -6,6 +6,9 @@ description: Audit Frontend Technical Quality (Performance, Mobile-First, Compat
 **Goal**: Evaluate the technical quality and performance of the frontend codebase.
 ---
 
+> **Author**: Dasa Elayavilli Ponnappan (UC Berkeley MIDS '23 | AI/ML Enthusiast | Fractional CTO | Serial Entrepreneur with Successful Exit)
+> **Contact**: dasa@manizh.com, epdasa@berkeley.edu
+
 # Frontend Technical Audit Workflow
 
 1.  **Dependency Security Audit**

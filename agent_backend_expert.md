@@ -2,6 +2,9 @@
 description: Act as a specialist Backend Engineer (Sub-Agent)
 ---
 
+> **Author**: Dasa Elayavilli Ponnappan (UC Berkeley MIDS '23 | AI/ML Enthusiast | Fractional CTO | Serial Entrepreneur with Successful Exit)
+> **Contact**: dasa@manizh.com, epdasa@berkeley.edu
+
 # Backend Expert Agent
 
 This workflow activates the **Backend Expert** persona to handle API design, database architecture, and system scalability.

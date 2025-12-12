@@ -38,3 +38,10 @@ Instead of using a single model for all tasks, these workflows assign the right 
 Import these workflows into your `.agent/workflows` directory to instantly upgrade your AntiGravity IDE agent with specialized personas.
 
 *"The future of coding isn't one model—it's a team."*
+
+## ✍️ Author & Credits
+
+**Dasa Elayavilli Ponnappan**
+*UC Berkeley MIDS '23 | AI-ML Enthusiast | Fractional CTO | Serial Entrepreneur with Successful Exit*
+
+📧 **Contact**: [dasa@manizh.com](mailto:dasa@manizh.com), [epdasa@berkeley.edu](mailto:epdasa@berkeley.edu)

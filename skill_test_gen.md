@@ -2,6 +2,9 @@
 description: Automatically suggest tests for new functions and components (Skill)
 ---
 
+> **Author**: Dasa Elayavilli Ponnappan (UC Berkeley MIDS '23 | AI/ML Enthusiast | Fractional CTO | Serial Entrepreneur with Successful Exit)
+> **Contact**: dasa@manizh.com, epdasa@berkeley.edu
+
 # Test Generator Skill
 
 **Role**: Test Engineer

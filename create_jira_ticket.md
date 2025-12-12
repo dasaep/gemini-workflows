@@ -6,6 +6,9 @@ description: Create a JIRA Ticket (Task/Bug)
 **Expertise**: JIRA Query Language (JQL), Agile Methodologies, Task Breakdown.
 **Goal**: Efficiently create and manage JIRA tickets.
 
+> **Author**: Dasa Elayavilli Ponnappan (UC Berkeley MIDS '23 | AI/ML Enthusiast | Fractional CTO | Serial Entrepreneur with Successful Exit)
+> **Contact**: dasa@manizh.com, epdasa@berkeley.edu
+
 # Create JIRA Ticket Workflow
 
 1.  **Check Configuration**

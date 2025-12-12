@@ -7,6 +7,9 @@ description: Audit Backend Functionality, Goals, and Extensibility
 **Expertise**: Python, FastAPI, Business Logic Verification, Data Integrity.
 **Goal**: Verify that backend features meet functional requirements and business goals.
 
+> **Author**: Dasa Elayavilli Ponnappan (UC Berkeley MIDS '23 | AI/ML Enthusiast | Fractional CTO | Serial Entrepreneur with Successful Exit)
+> **Contact**: dasa@manizh.com, epdasa@berkeley.edu
+
 # Backend Functional Audit Workflow
 
 1.  **Goal Intactness Review**

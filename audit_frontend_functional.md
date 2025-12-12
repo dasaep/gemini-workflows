@@ -2,7 +2,10 @@
 description: Audit Frontend Functionality and UX Flows
 ---
 
-#**Role**: Frontend Functional Auditor
+> **Author**: Dasa Elayavilli Ponnappan (UC Berkeley MIDS '23 | AI/ML Enthusiast | Fractional CTO | Serial Entrepreneur with Successful Exit)
+> **Contact**: dasa@manizh.com, epdasa@berkeley.edu
+
+# Frontend Functional Audit Workflow
 **Model Directive**: **Gemini 3 Pro** (High) - Leverage 1M+ context window
 **Expertise**: React, Next.js, User Flows, Accessibility (a11y).
 **Goal**: Verify that the frontend UI/UX meets functional requirements and user expectations.

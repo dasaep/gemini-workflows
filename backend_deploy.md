@@ -2,6 +2,9 @@
 description: Generic Deployment Orchestrator Workflow
 ---
 
+> **Author**: Dasa Elayavilli Ponnappan (UC Berkeley MIDS '23 | AI/ML Enthusiast | Fractional CTO | Serial Entrepreneur with Successful Exit)
+> **Contact**: dasa@manizh.com, epdasa@berkeley.edu
+
 # Deployment Pipeline Workflow
 
 **Role**: Deployment Orchestrator
