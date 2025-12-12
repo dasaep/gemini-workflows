@@ -130,3 +130,15 @@ echo -e "\n${BLUE}=================================================${NC}"
 echo -e "${GREEN}      Installation Complete! 🚀      ${NC}"
 echo -e "${BLUE}=================================================${NC}"
 echo -e "You can now use the workflows in your AI IDE."
+
+echo -e "\n${BLUE}--- 💡 Usage Examples ---${NC}"
+echo -e "${YELLOW}1. Backend Development:${NC}  @agent_backend_expert \"Design a User API\""
+echo -e "${YELLOW}2. Frontend Development:${NC} @agent_frontend_expert \"Refactor the Dashboard\""
+echo -e "${YELLOW}3. Security Audit:${NC}       @agent_audit_expert \"Audit the auth module\""
+echo -e "${YELLOW}4. Infrastructure:${NC}       @agent_infrastructure_expert \"Optimise GKE cost\""
+echo -e "${YELLOW}5. Jira Ticket:${NC}          @create_jira_ticket \"Bug: Fix login crash\""
+
+echo -e "\n${BLUE}💡 Pro Tip: Chain them for E2E flow!${NC}"
+echo -e "   ${GREEN}Code${NC} (@agent_backend_expert) -> ${GREEN}Audit${NC} (@agent_audit_expert) -> ${GREEN}Deploy${NC} (@backend_deploy)"
+
+

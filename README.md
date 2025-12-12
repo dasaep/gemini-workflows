@@ -61,6 +61,22 @@ Double-click `install.bat` or run it from Command Prompt:
 install.bat
 ```
 
+## 🔗 Chaining Strategy: End-to-End Flow
+
+For a complete feature lifecycle, chain the agents in this order:
+
+**1. Implementation (Opus 4.5)**
+*   `@agent_backend_expert "Design a User API"`
+*   `@agent_frontend_expert "Connect API to Dashboard"`
+
+**2. Audit & Verification (Gemini 3 Pro)**
+*   `@agent_audit_expert "Audit the auth module for security"`
+*   `@skill_test_gen "Generate tests for user_service.py"`
+
+**3. Deployment (GPT-5.2)**
+*   `@backend_deploy "Deploy the new user service"`
+*   `@create_jira_ticket "Task: Verify user flow in prod"`
+
 ## ✍️ Author & Credits
 
 **Dasa Elayavilli Ponnappan**

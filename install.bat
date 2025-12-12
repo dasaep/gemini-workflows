@@ -137,4 +137,17 @@ powershell -Command "Write-Host '===============================================
 powershell -Command "Write-Host '      Installation Complete! 🚀      ' -ForegroundColor Green"
 powershell -Command "Write-Host '=================================================' -ForegroundColor Cyan"
 echo You can now use the workflows in your AI IDE.
+
+echo.
+powershell -Command "Write-Host '--- 💡 Usage Examples ---' -ForegroundColor Cyan"
+powershell -Command "Write-Host '1. Backend Development:  @agent_backend_expert \"Design a User API\"' -ForegroundColor Yellow"
+powershell -Command "Write-Host '2. Frontend Development: @agent_frontend_expert \"Refactor the Dashboard\"' -ForegroundColor Yellow"
+powershell -Command "Write-Host '3. Security Audit:       @agent_audit_expert \"Audit the auth module\"' -ForegroundColor Yellow"
+powershell -Command "Write-Host '4. Infrastructure:       @agent_infrastructure_expert \"Optimise GKE cost\"' -ForegroundColor Yellow"
+powershell -Command "Write-Host '5. Jira Ticket:          @create_jira_ticket \"Bug: Fix login crash\"' -ForegroundColor Yellow"
+
+echo.
+powershell -Command "Write-Host '💡 Pro Tip: Chain them for E2E flow!' -ForegroundColor Cyan"
+powershell -Command "Write-Host '   Code (@agent_backend_expert) -> Audit (@agent_audit_expert) -> Deploy (@backend_deploy)' -ForegroundColor Green"
+
 pause
