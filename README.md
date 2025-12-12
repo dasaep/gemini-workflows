@@ -39,6 +39,28 @@ Import these workflows into your `.agent/workflows` directory to instantly upgra
 
 *"The future of coding isn't one model—it's a team."*
 
+
+## 💿 Interactive Installation
+
+We provide scripted installers for a seamless setup experience. These scripts will:
+1.  Copy the workflows to your preferred directory (default: `.agent/workflows`).
+2.  Check for the existence of your `.env` file.
+3.  Verify that required API keys (`ANTHROPIC_API_KEY`, `OPENAI_API_KEY`, `GOOGLE_API_KEY`) are present.
+4.  Provide color-coded status updates.
+
+### Mac / Linux / Unix
+Run the bash script:
+```bash
+chmod +x install.sh
+./install.sh
+```
+
+### Windows
+Double-click `install.bat` or run it from Command Prompt:
+```cmd
+install.bat
+```
+
 ## ✍️ Author & Credits
 
 **Dasa Elayavilli Ponnappan**
